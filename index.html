@@ -1,120 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>.: Projeto Kenziefy :.</title>
 
-    <link rel = "preconnect" href = "https://fonts.googleapis.com">
-    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
-    
-    
-    <link rel="stylesheet" type="text/css" href="./src/css/style.css">
-</head>
-<body>
-    
-    <main> <!-- Conteúdo mais importante do Site-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-        <aside class="sidebarMenuNavegacao"> <!-- Menu Lateral de Opções -->
+    <link rel="stylesheet" type="text/css" href="./src/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- Conteúdo mais importante do Site-->
 
-            <img src="./src/img/logo.png" alt="Logo Kenziefy">
+      <aside class="sidebarMenuNavegacao">
+        <!-- Menu Lateral de Opções -->
 
-            <nav class="menuNavegacao"> <!--Menu lateral na parte esquerda, área de navegação-->
+        <img src="/src/img/logo.png" alt="Logo Kenziefy" />
 
-                <ul class="listaLinks"> <!--Ítens de lista para navegação-->
-                    <li>
-                        <a href="https://kenzie.com.br/">
-                            <img src="./src/img/icone1.png" alt="Ícone Home">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://kenzie.com.br/">
-                            <img src="./src/img/icone2.png" alt="Ícone Browse">
-                            Browse
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://kenzie.com.br/">
-                            <img src="./src/img/icone3.png" alt="Ícone Liked songs">
-                            Liked Songs
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+        <nav class="menuNavegacao">
+          <!--Menu lateral na parte esquerda, área de navegação-->
 
-        </aside>    
+          <ul class="listaLinks">
+            <!--Ítens de lista para navegação-->
+            <li>
+              <a href="https://kenzie.com.br/">
+                <img src="/src/img/icone1.png" alt="Ícone Home" />
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="https://kenzie.com.br/">
+                <img src="/src/img/icone2.png" alt="Ícone Browse" />
+                Browse
+              </a>
+            </li>
+            <li>
+              <a href="https://kenzie.com.br/">
+                <img src="/src/img/icone3.png" alt="Ícone Liked songs" />
+                Liked Songs
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
 
-        <section class="secaoMusicas"> <!-- Seção da lista de músca -->
-            <header class="cabecalho"> <!-- Cabeçalho da seção-->
-                
-                <div class="user">
-                    <img src="./src/img/user.png" alt="Usuário">
-                    <h2>CaroldeLira</h2>
-                </div>
+      <section class="secaoMusicas">
+        <!-- Seção da lista de músca -->
+        <header class="cabecalho">
+          <!-- Cabeçalho da seção-->
 
-                <div class="qtdMusicas">
-                    <p>1158 songs</p>
-                </div>
+          <div class="user">
+            <img src="/src/img/user.png" alt="Usuário" />
+            <h2>CaroldeLira</h2>
+          </div>
 
-            </header>
+          <div class="qtdMusicas">
+            <p>1158 songs</p>
+          </div>
+        </header>
 
-            <div class="areaListaMusicas"> <!--Corpo da Lista de musica-->
+        <div class="areaListaMusicas">
+          <!--Corpo da Lista de musica-->
 
-                <button id="btnPause">Pause</button>
+          <button id="btnPause">Pause</button>
 
-                <div class="cabecalhoInfoMusicas">
-                    <p class="primeiroItem">TITLE</p>
-                    <p>ARTIST</p>
-                    <p>ALBUM</p>
-                </div>
+          <div class="cabecalhoInfoMusicas">
+            <p class="primeiroItem">TITLE</p>
+            <p>ARTIST</p>
+            <p>ALBUM</p>
+          </div>
 
-                <ul class="ListaMusicas">
-                
-                </ul>
+          <ul class="ListaMusicas"></ul>
+        </div>
+      </section>
 
-            </div>
+      <section class="areaPlayer">
+        <!--Seção do player-->
 
+        <audio src="" id="saidaAudio"></audio>
 
-        </section>
+        <div class="infoMusicaAtual">
+          <!-- Lado esquerdo do player -->
+          <figure class="imagemAlbum">
+            <img id="fotoAlbum" src="/src/img/album4.png" alt="Album" />
+            <figcaption>Legenda</figcaption>
+          </figure>
 
-        <section class="areaPlayer"> <!--Seção do player-->
+          <div class="infoalbum">
+            <h2 id="nomeMusica">Square One</h2>
+            <p id="nomeAlbum">Coldplay</p>
+          </div>
+        </div>
 
-            <audio src="" id="saidaAudio"></audio>
+        <div class="areaPlayerControles">
+          <!-- Centro do Player - controle-->
 
-            <div class="infoMusicaAtual"> <!-- Lado esquerdo do player -->
-                <figure class="imagemAlbum">
-                    <img id="fotoAlbum" src="./src/img/album4.png" alt="Album">
-                    <figcaption>Legenda</figcaption>
-                </figure>
+          <button id="btnControlprev"></button>
+          <button id="btnControlPlay"></button>
+          <button id="btnControlNext"></button>
+        </div>
 
-                <div class="infoalbum">
-                    <h2 id='nomeMusica'>Square One</h2>
-                    <p id='nomeAlbum'>Coldplay</p>
-                </div>
-            </div>
+        <div class="areaPlayerVolume">
+          <!-- Controle de Volume - Lado direito-->
 
-            <div class="areaPlayerControles"> <!-- Centro do Player - controle-->
-
-                <button id="btnControlprev"></button>
-                <button id="btnControlPlay"></button>
-                <button id="btnControlNext"></button>
-
-            </div> 
-                                               
-            <div class="areaPlayerVolume"> <!-- Controle de Volume - Lado direito-->
-
-                <input type="range" max='1' value="1" step="0.1"> <!--Entrada de dados / o tipo pode ser qualquer entrada, tipo text, color, password...
+          <input type="range" max="1" value="1" step="0.1" />
+          <!--Entrada de dados / o tipo pode ser qualquer entrada, tipo text, color, password...
                     o valor é 1 para o volume começar baixo
                     o step é o quanto ele vai pular de um volume para outro-->
-            </div>
-
-        </section>
-
+        </div>
+      </section>
     </main>
 
-    <script type="text/javascript" src="./src/js/script.js"></script>
-
-</body>
+    <script type="text/javascript" src="/src/js/script.js"></script>
+  </body>
 </html>
